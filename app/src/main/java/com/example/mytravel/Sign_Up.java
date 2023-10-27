@@ -91,6 +91,7 @@ public class Sign_Up extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Intent main_intent = new Intent(Sign_Up.this,MainActivity.class);
+                            Toast.makeText(Sign_Up.this, "Sign up Successful", Toast.LENGTH_SHORT).show();
                             main_intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(main_intent);
                         }

@@ -26,9 +26,9 @@ public class UserModel {
         return userName;
     }
     public String getEmail(){
-        return userName;
+        return email;
     }
     public String getPassword(){
-        return userName;
+        return password;
     }
 }

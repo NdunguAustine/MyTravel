@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,7 @@
         android:theme="@style/Theme.MyTravel"
         tools:targetApi="31">
         <activity
-            android:name=".Sign_Up"
+            android:name=".auth_log_in"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".auth_log_in"
+            android:name=".Sign_Up"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
